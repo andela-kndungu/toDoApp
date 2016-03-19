@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var connectionString = 'postgres://localhost:5432/todo';
+var path = require('path');
+var connectionString = require(path.join(__dirname, '../', '../', 'config'));
 
 
 /* GET home page. */
